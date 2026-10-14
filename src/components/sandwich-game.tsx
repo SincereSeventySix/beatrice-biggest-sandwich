@@ -17,6 +17,7 @@ import {
   type GameState,
 } from "@/game/logic";
 import {
+  playClick,
   playMilestone,
   playMiss,
   playPlace,
@@ -174,6 +175,8 @@ export function SandwichGame() {
   }
 
   function onTile(id: string) {
+    unlockAudio();
+    playClick();
     if (stateRef.current.phase === "ready") {
       setPeek(id);
       return;

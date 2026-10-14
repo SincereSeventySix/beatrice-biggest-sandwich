@@ -128,6 +128,10 @@ function play(notes: Array<[number, number, number, OscillatorType?]>, stagger =
   });
 }
 
+export function playClick(): void {
+  play([[740, 0.045, 0.09, "triangle"]], 0);
+}
+
 export function playStart(): void {
   play([
     [392, 0.14, 0.12],
