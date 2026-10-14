@@ -28,7 +28,7 @@ function ensure(): Mixer | null {
   return mixer;
 }
 
-const VERY_NICE = publicUrl("/sfx/very-nice.mp3");
+const VERY_NICE = publicUrl("/sfx/very-nice.mp3?v=2");
 const WHAT = publicUrl("/sfx/what.mp3");
 
 const clips = new Map<string, AudioBuffer>();
